@@ -1,0 +1,113 @@
+@import './Mixins'
+
+body.showCart .cartTab
+    inset: 0 0 0 auto
+.title-container
+    width: 900px
+    max-width: 90vw
+    margin: auto
+    text-align: center
+    padding-top: 10px
+    transition: transform .5s
+    header
+        display: flex
+        align-self: center
+        justify-content: space-between
+        padding: 20px 0
+        .title
+        .icon-cart
+            display: flex
+            justify-content: center
+            svg
+                width: 30px
+            span
+                display: flex
+                justify-content: center
+                align-items: center
+                position: relative
+                top: 15px
+                right: 12.5px
+                width: 15px
+                height: 14px
+                border-radius: 50%
+                background: red
+                font-size: 0.7rem
+                color: #fff
+    .listproduct
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        gap: 20px
+        @include mediaQuery(992px)
+            grid-template-columns: repeat(3, 1fr)
+        @include mediaQuery(768px)
+            grid-template-columns: repeat(2, 1fr)
+        
+        .item
+            background: #eeeee6
+            padding: 20px
+            border-radius: 20px
+            img
+                width: 90%
+                filter: drop-shadow(0 50px 20px #0009)
+            h2
+                font-weight: 500
+                font-size: large
+            .price
+                letter-spacing: 7px
+                font-size: small
+            .addToCartBtn
+                background: #353432
+                color: #eee
+                padding: 5px 10px
+                border-radius: 20px
+                margin-top: 10px
+                border: none
+                cursor: pointer
+    .cartTab
+        width: 400px
+        background: #353432
+        color: #eee
+        position: fixed
+        inset: 0 -400px 0 auto
+        display: grid
+        grid-template-rows: 70px 1fr 70px
+        transition: .5s
+        h1
+            padding: 20px
+            margin: 0
+            font-weight: 300
+        .listCart
+            overflow: auto
+            &::-webkit-scrollbar
+                width: 0
+            .item
+                display: grid
+                grid-template-columns: 70px 150px 50px 1fr
+                gap: 10px
+                text-align: center
+                align-items: center
+                &:nth-child(even)
+                    background: #eee1
+
+                img
+                    width: 100%
+                .quantity
+                    span
+                        display: inline-block
+                        width: 25px
+                        height: 25px
+                        background: #eee
+                        color: #555
+                        border-radius: 50%
+                        cursor: pointer
+                        &:nth-child(2)
+                            background-color: transparent
+        .btn
+            display: grid
+            grid-template-columns: repeat(2, 1fr)
+            button
+                background: #E8BC0E
+                font-weight: 500
+                cursor: pointer
+            .close
+                background: #eee
