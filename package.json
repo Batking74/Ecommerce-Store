@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "concurrently \"npm run client\" \"npm run server\"",
+    "dev": "npm i && concurrently \"npm run client\" \"npm run server\"",
     "client": "cd client && npm run start",
     "server": "python manage.py runserver 5000"
   },
