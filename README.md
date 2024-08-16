@@ -19,7 +19,7 @@ The application demonstrates key features found in online stores, including:
 
 This project focuses on the essential elements of an e-commerce site, offering a practical demonstration of how users interact with products in an online shopping environment. It's built using the Python Stack.
 
-## Technologies Used
+## Technologies and Tools Used
 - HTML
 - CSS
 - JavaScript
@@ -31,4 +31,4 @@ This project focuses on the essential elements of an e-commerce site, offering a
 
 Deployed Site: Coming Soon!
 
-GitHub Repo: https://github.com/Batking74/E-commerce-Store
+GitHub Repo: https://github.com/Batking74/E-commerce-Store-Features
