@@ -4,14 +4,17 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "npm i && npm run sass && vite build && vite",
+    "dev": "npm i && npm run sass && vite build && vite",
+    "start": "npm i && npm run sass && vite build",
     "sass": "sass src/assets/main.scss src/assets/output/main.min.css --no-source-map --style=compressed"
   },
   "dependencies": {
     "@apollo/client": "^3.11.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-router-dom": "^6.26.0"
+    "react-router-dom": "^6.26.0",
+    "sass": "^1.77.8",
+    "vite": "^5.4.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.8.0",
@@ -23,8 +26,6 @@
     "eslint-plugin-react": "^7.35.0",
     "eslint-plugin-react-hooks": "^5.1.0-rc.0",
     "eslint-plugin-react-refresh": "^0.4.9",
-    "globals": "^15.9.0",
-    "sass": "^1.77.8",
-    "vite": "^5.4.0"
+    "globals": "^15.9.0"
   }
 }
