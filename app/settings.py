@@ -120,7 +120,7 @@ STATIC_URL = 'static/'
 STATIC_ROOT = BASE_DIR.joinpath('staticfiles')
 
 STATICFILES_DIRS = [
-    BASE_DIR / 'client' / 'dist',
+    BASE_DIR.joinpath('client/dist/')
 ]
 
 
