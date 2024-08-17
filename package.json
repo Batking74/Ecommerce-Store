@@ -6,8 +6,7 @@
     "dev": "npm i && concurrently \"cd client && npm run dev\" \"python manage.py runserver 5000\"",
     "client": "cd client && npm run start",
     "server": "pip freeze > requirements.txt && pip install -r requirements.txt && python manage.py runserver",
-    "start": "npm i && npm run client && npm run server",
-    "heroku-postbuild": "npm run client"
+    "start": "npm i && npm run client && npm run server"
   },
   "keywords": [],
   "author": "",

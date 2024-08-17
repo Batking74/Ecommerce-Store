@@ -1,5 +1,5 @@
 from pathlib import Path
-import django_heroku
+# import django_heroku
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -44,7 +44,7 @@ ROOT_URLCONF = 'app.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [ BASE_DIR.joinpath('staticfiles') ], # client/dist
+        'DIRS': [ BASE_DIR.joinpath('production-assets') ], # client/dist
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -107,15 +107,16 @@ USE_TZ = True
 
 STATIC_URL = 'assets/'
 
-
+# Direct Django to the assets folder where the CSS, JS, and images are located
 STATICFILES_DIRS = [
-    BASE_DIR.joinpath('client/dist/assets')
+    BASE_DIR.joinpath('client/dist')
     # client/dist/assets
 ]
 
-STATIC_ROOT = BASE_DIR.joinpath('staticfiles')
+# Optional: Specify where to collect static files
+STATIC_ROOT = BASE_DIR.joinpath('production-assets')
 
-django_heroku.settings(locals())
+# django_heroku.settings(locals())
 
 
 # Default primary key field type
