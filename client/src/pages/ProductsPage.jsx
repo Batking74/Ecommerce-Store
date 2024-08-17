@@ -8,73 +8,73 @@ const products = [
         Name: 'KING NAZ',
         Price: 200,
         Quantity: 1,
-        Image: 'Lion2.webp'
+        Image: 'assets/Lion2.webp'
     },
     {
         Name: 'KING NAZ',
         Price: 500,
         Quantity: 1,
-        Image: 'Lion2.webp'
+        Image: 'assets/Lion2.webp'
     },
     {
         Name: 'KING NAZ',
         Price: 700,
         Quantity: 1,
-        Image: 'Lion2.webp'
+        Image: 'assets/Lion2.webp'
     },
     {
         Name: 'KING NAZ',
         Price: 100,
         Quantity: 1,
-        Image: 'Lion2.webp'
+        Image: 'assets/Lion2.webp'
     },
     {
         Name: 'KING NAZ',
         Price: 50,
         Quantity: 1,
-        Image: 'Lion2.webp'
+        Image: 'assets/Lion2.webp'
     },
     {
         Name: 'KING NAZ',
         Price: 50,
         Quantity: 1,
-        Image: 'Lion2.webp'
+        Image: 'assets/Lion2.webp'
     },
     {
         Name: 'KING NAZ',
         Price: 50,
         Quantity: 1,
-        Image: 'Lion2.webp'
+        Image: 'assets/Lion2.webp'
     },
     {
         Name: 'KING NAZ',
         Price: 50,
         Quantity: 1,
-        Image: 'Lion2.webp'
+        Image: 'assets/Lion2.webp'
     },
     {
         Name: 'KING NAZ',
         Price: 50,
         Quantity: 1,
-        Image: 'Lion2.webp'
+        Image: 'assets/Lion2.webp'
     },
     {
         Name: 'KING NAZ',
         Price: 50,
         Quantity: 1,
-        Image: 'Lion2.webp'
+        Image: 'assets/Lion2.webp'
     },
     {
         Name: 'KING NAZ',
         Price: 50,
         Quantity: 1,
-        Image: 'Lion2.webp'
+        Image: 'assets/Lion2.webp'
     },
     {
         Name: 'KING NAZ',
         Price: 50,
         Quantity: 1,
-        Image: 'Lion2.webp'
+        Image: 'assets/Lion2.webp'
     },
 ]
 

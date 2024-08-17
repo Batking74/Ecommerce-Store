@@ -15,7 +15,7 @@ export default function SideListItemComponent({ props }) {
         return (
             <div key={i} data-type={ProductID} className="item">
                 <div className="image">
-                    <img src="Lion2.webp" alt="Image of Lion" />
+                    <img src="assets/Lion2.webp" alt="Image of Lion" />
                 </div>
                 <div className="name">{products[ProductID - 1].Name}</div>
                 <div className="totalPrice">${products[ProductID - 1].Price * Quantity}</div>
