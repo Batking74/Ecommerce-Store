@@ -109,7 +109,7 @@ STATIC_URL = 'assets/'
 
 
 STATICFILES_DIRS = [
-    BASE_DIR.joinpath('client/dist')
+    BASE_DIR.joinpath('client/dist/assets')
     # client/dist/assets
 ]
 
