@@ -106,7 +106,6 @@ USE_TZ = True
 
 STATIC_URL = 'assets/'
 
-# STATIC_ROOT = BASE_DIR.joinpath('staticfiles')
 
 STATICFILES_DIRS = [
     BASE_DIR.joinpath('client/dist')
