@@ -1,4 +1,5 @@
 from pathlib import Path
+import django_heroku
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -13,7 +14,7 @@ SECRET_KEY = 'django-insecure-u4rrkxoq+zh*_-7qh_!i%g@g1r!%0-7i4oyytr^epevqvk84^!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['e-commerce-store-features-abb60f5e7b65.herokuapp.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -104,15 +105,18 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
-STATIC_URL = 'assets/'
+STATIC_URL = 'static/'
+# assets/
 
 
 STATICFILES_DIRS = [
-    BASE_DIR.joinpath('client/dist')
+    BASE_DIR.joinpath('static')
     # client/dist/assets
 ]
 
 STATIC_ROOT = BASE_DIR.joinpath('staticfiles')
+
+django_heroku.settings(locals())
 
 
 # Default primary key field type
