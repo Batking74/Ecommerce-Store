@@ -109,7 +109,8 @@ STATIC_URL = 'assets/'
 # STATIC_ROOT = BASE_DIR.joinpath('staticfiles')
 
 STATICFILES_DIRS = [
-    BASE_DIR.joinpath('client/dist/assets')
+    BASE_DIR.joinpath('staticfiles')
+    # client/dist/assets
 ]
 
 STATIC_ROOT = BASE_DIR.joinpath('staticfiles')
