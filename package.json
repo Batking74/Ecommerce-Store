@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "npm i && concurrently \"cd client && npm run dev\" \"python manage.py runserver 5000\"",
-    "build": "npm i && cd client && npm run start && pip install -r requirements.txt && python manage.py collectstatic",
+    "build": "npm i && cd client && npm run start && cd .. && pip install -r requirements.txt && python manage.py collectstatic",
     "packages": "pip freeze > requirements.txt"
   },
   "keywords": [],
