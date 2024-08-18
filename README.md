@@ -1,5 +1,5 @@
 # E-commerce Store
-![](./client/public/Lion2.webp)
+![Naz E-Commerce Features Project](./E-Commerce Store Features Project-8_18_2024.webp)
 
 ## Description
 This project is a showcase of core e-commerce functionality, centered around a dynamic and interactive product page. The application captures the essential elements of an online shopping experience, allowing users to browse through a selection of products presented with detailed information such as images, descriptions, prices, and stock availability. The interface is designed to be intuitive and user-friendly, making it easy for users to explore products and add items to their shopping cart.
@@ -29,6 +29,6 @@ This project focuses on the essential elements of an e-commerce site, offering a
 - Python
 - Django
 
-Deployed Site: Coming Soon!
+Deployed Site: https://e-commerce-store-vmqg.onrender.com/
 
 GitHub Repo: https://github.com/Batking74/E-commerce-Store-Features
