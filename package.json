@@ -4,9 +4,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "npm i && concurrently \"cd client && npm run dev\" \"python manage.py runserver 5000\"",
-    "client": "cd client && npm run start",
-    "server": "pip freeze > requirements.txt && pip install -r requirements.txt && gunicorn app.wsgi:application",
-    "start": "npm i && npm run client && npm run server"
+    "build": "npm i && cd client && npm run start && pip install -r requirements.txt && python manage.py collectstatic",
+    "packages": "pip freeze > requirements.txt"
   },
   "keywords": [],
   "author": "",
